@@ -11,20 +11,21 @@
     <!--Header-->
     <body class="general-style">
         <header class="header-style">
-            <div class="header-container">
-                <nav>               
+            <div class="header-container line">
+                <nav class="">
                     <ul class="list nav-style">
-                        <li  class="logo-header-position">
-                            <a href="./index.html" lang="en" class="link logo-header">Web<span class="logo-black">Studio</span></a>
+                        <li class="logo-header-position">
+                            <a href="../index.html" lang="en" class="logo-header">Web<span class="logo-black">Studio</span></a>
                         </li>
                         <li class="nav-position">
-                            <a href="./index.html" class="link navigate studio current">Студия</a>
+                            <a href="../index.html" class="navigate studio">Студия</a>
                         </li>
                         <li class="nav-position">
-                            <a href="./portfolio-folder/portfolio.html" target="_blank" class="link navigate portfolio">Портфолио</a>
+                            <a href="./portfolio-folder/portfolio.html" target="_blank"
+                                class="navigate portfolio current">Портфолио</a>
                         </li>
                         <li class="nav-position">
-                            <a href="#" class="link navigate contacts">Контакты</a>
+                            <a href="#" class="navigate contacts">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -37,7 +38,7 @@
             <!--Hero-->
             <!--Первая секция-->
         <main>   
-            <section class="">
+            <section class="first-section-bg">
                 <div class="first-container">
                     <h1 class="h1-style">Эффективные решения для вашего бизнеса</h1>
                     <div class="first-btn-style">
@@ -46,7 +47,7 @@
                 </div>
             </section>
             <!--Вторая секция-->
-            <section>
+            <section class="second-section-bg">
                 <div class="second-container">
                     <h2 class="invisible">Сильные стороны компании</h2>
                     <ul class="list strengths-position">
@@ -79,6 +80,11 @@
                             </p>
                         </li>
                     </ul>
+                </div>
+            </section>
+            <!--Третья секция-->
+            <section class="third-section-bg">
+                <div class="third-container">  
                     <h2 class="what-we-do-title">Чем мы занимаемся</h2>
                     <ul class="list img-list">
                         <li class="img-position">
@@ -93,12 +99,12 @@
                     </ul>
                 </div>
             </section>
-                <!--Третья секция-->
-            <section class="third-container-bg">
-                <div class="third-container">
+            <!--Четвертая секция-->
+            <section class="fourth-section-bg">
+                <div class="fourth-container">
                     <h2 class="our-team">Наша команда</h2>
                     <ul class="list team-position">
-                        <li class="team-item igor">
+                        <li class="team-item">
                             <a href="#" class="team-link"><img src="./resources/ourteam/igor.jpg" alt="Игорь Демьяненко" width="270"
                             height="260">
                             <h3 class="text-link">
@@ -107,7 +113,7 @@
                             <p lang="en" class="text-p">Product Designer</p>
                             </a>
                         </li>
-                        <li class="team-item olga">
+                        <li class="team-item">
                             <a href="#" class="team-link"><img src="./resources/ourteam/olga.jpg" alt="Ольга Репина" width="270"
                                     height="260">
                                 <h3 class="text-link">
@@ -116,7 +122,7 @@
                                 <p lang="en" class="text-p">Frontend Developer</p>
                             </a>
                         </li>
-                        <li class="team-item nikolay">
+                        <li class="team-item">
                             <a href="#" class="team-link"><img src="./resources/ourteam/nikolai.jpg" alt="Николай Тарасов" width="270"
                                     height="260">
                                 <h3 class="text-link">
@@ -125,7 +131,7 @@
                                 <p lang="en" class="text-p">Marketing</p>
                             </a>
                         </li>
-                        <li class="team-item michail">
+                        <li class="team-item">
                             <a href="#" class="team-link"><img src="./resources/ourteam/michail.jpg" alt="Михаил Ермаков" width="270"
                                     height="260">
                                 <h3 class="text-link">
@@ -138,10 +144,10 @@
                 </div>
             </section>
         </main>
-            <!--Подвал-->
-        <div>
-            <footer class="footer-bg">
-                <div class="footer-container">
+        <!--Подвал-->
+        <section class="footer-bg">
+            <h2 class="invisible">Контактные данные</h2>
+            <footer class="footer-container">
                     <a href="./index.html" lang="en" class="logo-footer">Web<span class="logowhite">Studio</span></a>
                     <address>
                         <ul class="list footer-style">
@@ -158,8 +164,7 @@
                             </li>
                         </ul>
                     </address>
-                </div>
             </footer>
-        </div>
+        </section>
     </body>
 </html>

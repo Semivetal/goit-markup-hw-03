@@ -162,6 +162,10 @@ button :hover {
   align-items: center;
   flex-wrap: nowrap;
   text-decoration: none;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .mail-link:hover,
@@ -183,15 +187,11 @@ button :hover {
   color: var(--primary-text-color);
 }
 
-.contact-item > .contact-link {
-  margin-left: 331px;
-}
-
 /* info@devstudio.com */
 .mail-link {
   display: flex;
   align-items: center;
-  margin-left: 331px;
+  /* margin-left: 331px; */
   max-width: 135px;
 }
 
@@ -205,12 +205,19 @@ button :hover {
 
 /*Первая секция*/
 /* Background */
-.first-container {
+.first-section-bg {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--order-background-color);
+}
+
+.first-container {
+  width: 1230px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Эффективные решения для вашего бизнеса */
@@ -259,12 +266,15 @@ button :hover {
 
 /* Вторая секция */
 
+.second-section-bg {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .second-container {
   text-align: left;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 94px;
-  padding-bottom: 94px;
   margin: 0 auto;
   width: 1230px;
 }
@@ -272,7 +282,7 @@ button :hover {
 .strengths-position {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .strengths-title {
@@ -335,12 +345,24 @@ button :hover {
   max-width: 250px;
 }
 
+/* Треться секция */
+
+.third-section-bg {
+  padding-top: 0px;
+  padding-bottom: 79px;
+}
+
+.third-container {
+  width: 1230px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* Чем мы занимаемся */
+
 .what-we-do-title {
-  margin-top: 94px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0;
+  margin: 0 auto;
   width: 376px;
   height: 42px;
   white-space: nowrap;
@@ -360,22 +382,23 @@ button :hover {
   flex-direction: row;
   margin-top: 35px;
   padding: -15px;
-  /*justify-content: center;*/
 }
 
 .img-position {
   margin: 15px;
 }
 
-.third-container-bg {
+/* Четвертая секция */
+
+.fourth-section-bg {
   background-color: var(--team-background-color);
+  padding-top: 94px;
+  padding-bottom: 79px;
 }
 
-.third-container {
+.fourth-container {
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 94px;
-  padding-bottom: 94px;
   width: 1230px;
   margin: 0 auto;
 }
@@ -436,13 +459,12 @@ button :hover {
 /* Footer */
 
 .footer-bg {
-  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--order-background-color);
 }
 
 .footer-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -481,8 +503,8 @@ button :hover {
   padding-left: 15px;
   font-weight: 400;
   font-size: 14px;
-  font-style: normal;
   line-height: 1.7;
+  font-style: normal;
 }
 
 .maps-ft {
@@ -498,19 +520,18 @@ button :hover {
 }
 
 /* Portfolio */
-.main-bg {
-  height: 1548px;
+
+.portfolio-section-bg {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--header-background-color);
 }
 
-.hero-style {
+.portfolio-container {
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 94px;
-  padding-bottom: 94px;
   margin: 0 auto;
   width: 1230px;
-  height: 1548px;
 }
 
 .btn-position {
@@ -574,12 +595,13 @@ button :hover {
   flex-wrap: wrap;
   align-content: stretch;
   margin: -15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .card {
   margin: 15px;
   width: 370px;
-  height: 404px;
   list-style: none;
   text-decoration: none;
   background: var(--header-background-color);
@@ -587,13 +609,14 @@ button :hover {
   border: 1px solid var(--portfolio-border-color);
 }
 
+.card-text {
+  padding: 20px 24px;
+}
+
 .work-text {
   display: inline-block;
   margin: 0 auto;
-  padding-top: 20px;
-  padding-left: 24px;
-  width: 322px;
-  height: 36px;
+  min-width: 322px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -604,10 +627,7 @@ button :hover {
 .work-type {
   display: inline-block;
   margin: 0 auto;
-  padding-top: 4px;
-  padding-left: 24px;
-  width: 322px;
-  height: 30px;
+  min-width: 322px;
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-text-color);
