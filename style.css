@@ -281,8 +281,7 @@ button :hover {
 
 .strengths-position {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .strengths-title {
